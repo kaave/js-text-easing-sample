@@ -9,13 +9,13 @@ const conf = {
 %>
 
 <%- include('_head.ejs', { conf }) %>
-<%- include('../components/header/header.ejs', { conf }) %>
 
-<main id="main" class="main" role="main">
-<% [...Array(5).keys()].forEach(index => { %>
-    <div class="panel-<%= index + 1 %>"><%= index + 1 %></div>
-<% }) %>
+<main id="main" class="Main" role="main">
+    <section class="Char">
+    <% [...Array(15).keys()].forEach(index => { %>
+        <div class="Char__panel"><%= index + 1 %></div>
+    <% }) %>
+    </section>
 </main>
 
-<%- include('../components/footer/footer.ejs', { conf }) %>
 <%- include('_foot.ejs', { conf }) %>
