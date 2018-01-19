@@ -3,7 +3,7 @@ const { browserslist: browsers } = require('../package.json');
 module.exports = {
   dest: {
     dev: '.tmp',
-    build: 'build',
+    build: 'docs',
   },
 
   // この項目に要素を追加すると[copy:[KEY_NAME]]という名称で勝手にtaskも増えます。

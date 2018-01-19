@@ -19,7 +19,7 @@ if (typeof conf.script === 'string') {
 }
 conf.script.forEach(script => {
 %>
-<script src="<%= script.match(/^https?:/) != null ? script : `/js/${script}` %>"></script>
+<script src="<%= script.match(/^https?:/) != null ? script : `./js/${script}` %>"></script>
 <% }) %>
 </body>
 </html>

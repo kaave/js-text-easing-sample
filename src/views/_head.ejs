@@ -34,7 +34,7 @@
     }
     conf.style.forEach(style => {
 %>
-    <link rel="stylesheet" href="<%= style.match(/^https?:/) != null ? style : `/css/${style}` %>">
+    <link rel="stylesheet" href="<%= style.match(/^https?:/) != null ? style : `./css/${style}` %>">
 <% }) %>
 
 </head>
